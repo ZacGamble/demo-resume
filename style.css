@@ -1,3 +1,4 @@
+/* Classes and ID's generally in order of document flow */
 :root{
     --beige: rgb(245,245,220)
     --reddish: rgb(160,34,45)
@@ -24,6 +25,7 @@ header{
     max-height: 144px;
     max-width: 256px;
     margin-right: 1px;
+    
 }
 
 .content{
@@ -44,7 +46,17 @@ p{
 }
 li{
     margin: .5em;
+    list-style: none;
 }
+
+footer{
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+
+}
+
+/* utility classes below */
 
 .bgs{
     background-color: rgb(67,34,160);
@@ -80,8 +92,16 @@ li{
     margin: 1em;
 }
 
-@media screen and (max-width: 1200px) {
-    img{
-        display: none;
+@media screen and (max-width: 1080px) {
+   
+    #meat-container{
+        flex-direction: column-reverse;
+    }
+    #navbar{
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
+   
+    
+
